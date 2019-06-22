@@ -1,0 +1,35 @@
+{
+  "name": "TodoApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android-windows": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@react-native-community/viewpager": "^1.1.7",
+    "react": "16.8.3",
+    "react-native": "0.59.8",
+    "native-base": "^2.12.1",
+    "react-native-calendars": "^1.145.0",
+    "react-native-easy-grid": "^0.2.1",
+    "react-native-extended-stylesheet": "^0.11.2",
+    "react-native-firebase": "^5.4.2",
+    "react-native-localization": "^2.1.1",
+    "react-native-router-flux": "^4.0.6",
+    "react-native-scrollable-tab-view": "^0.10.0",
+    "react-native-toolbar": "^1.0.7"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.4",
+    "@babel/runtime": "7.4.4",
+    "babel-jest": "24.8.0",
+    "jest": "24.8.0",
+    "metro-react-native-babel-preset": "0.54.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
